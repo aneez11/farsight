@@ -1,0 +1,42 @@
+@use "./aspectRatio";
+@use "./fonts";
+@use "./partials/partials";
+@use "./navbar";
+@use "./index/index";
+@use "./details/details";
+@use "./details/newDetails";
+@use "./business";
+@use "./interview";
+@use "./author";
+@use "./support";
+@use "./podcast";
+@use "./footer";
+@use "./variables" as var;
+body {
+  font-family: "Garamond", "serif";
+  color: black;
+}
+// * {
+//   border: 1px solid #f00 !important;
+// }
+// html,
+// body {
+//   overflow-x: hidden;
+// }
+// body {
+//   position: relative;
+// }
+.d-inherit {
+  display: inherit;
+}
+
+.squiggly {
+  height: 10px;
+  // width: 100%;
+  // background-color: rgb(229, 218, 240);
+  background-image: url(../images/zigzag-01.svg);
+  background-repeat: no-repeat;
+  background-size: 35% 100%;
+  background-position: center center;
+  // margin-bottom: 10px;
+}

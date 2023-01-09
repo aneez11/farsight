@@ -1,0 +1,41 @@
+@use "./variables" as var;
+#support {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  .support-list {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    li {
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+    a {
+      color: var.$color-secondary;
+    }
+  }
+  .support-social {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    li {
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 50px;
+    }
+  }
+  .support-sub {
+    background-color: var.$color-secondary;
+    padding: 5px 10px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    &:hover {
+      box-shadow: 0 0 8px 2px lightgrey;
+    }
+  }
+}

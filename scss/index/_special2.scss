@@ -1,0 +1,113 @@
+@use "../variables" as var;
+.special1 {
+  .author,
+  .author-name {
+    &::before {
+      content: "▪";
+      font-size: 1.2rem;
+      color: var.$color-secondary;
+      padding-right: 5px;
+      margin-bottom: -10px;
+    }
+  }
+  .category {
+    color: white;
+    background-color: var.$color-secondary;
+    width: fit-content;
+    padding: 0 6px;
+    display: block;
+  }
+  .squig-row {
+    text-align: center;
+    .col-12 {
+      &:last-child {
+        .special-div {
+          .squiggly {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .top-row {
+    .left-col {
+      @media (max-width: "992px") {
+        border-bottom: 1px solid #e2e2e2;
+        margin-bottom: 15px;
+        padding-top: 15px;
+      }
+      .news-title {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        margin-bottom: 5px;
+        margin-top: 10px;
+      }
+      .news-author {
+        margin: 0;
+        margin-bottom: 15px;
+      }
+    }
+    .middle-col {
+      .news-title {
+        margin-top: 5px;
+      }
+      .news-author {
+        margin: 0;
+      }
+      .news-details {
+        @media (max-width: "768px") {
+          margin-top: 15px;
+        }
+      }
+    }
+    .right-col {
+      text-align: center;
+      @media (max-width: "992px") {
+        border-top: 1px solid #e2e2e2;
+        margin-top: 15px;
+        padding-top: 15px;
+      }
+      .news-title {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+      }
+      .news-circ-image {
+        width: 170px;
+        aspect-ratio: 1;
+        object-fit: cover;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: auto;
+        margin-bottom: 15px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  .bottom-row {
+    padding-top: 15px;
+    @media (max-width: "992px") {
+      padding-bottom: 15px;
+    }
+    .opinion-title {
+      color: white;
+      background-color: var.$color-secondary;
+      width: fit-content;
+      padding: 0 6px;
+      display: block;
+      margin-bottom: 10px;
+    }
+    .opinion-text {
+      font-weight: bold;
+      line-height: 1.4rem;
+      font-size: 1.1rem;
+      margin-bottom: 5px;
+    }
+    .news-author {
+      margin: 0;
+    }
+  }
+}

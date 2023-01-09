@@ -1,0 +1,33 @@
+@use "./breakingNews";
+@use "./topNews";
+@use "./latestNews";
+@use "./featuedNews";
+@use "./videoWatch";
+@use "./stat";
+@use "./mostViewed";
+@use "./photoSlider";
+@use "../variables" as var;
+@use "./special";
+@use "./special2";
+
+#subscription {
+  p {
+    font-size: 22px;
+    padding: 0;
+    margin: 0;
+    .text-special {
+      color: var.$text-secondary;
+    }
+  }
+  .btn-sub {
+    border-radius: 0;
+    background-color: var.$text-secondary;
+    margin-top: 10px;
+    padding: {
+      left: 50px;
+      right: 50px;
+    }
+    color: white;
+    font-weight: bold;
+  }
+}

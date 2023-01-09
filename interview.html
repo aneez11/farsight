@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farsight</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="vendors/slick/all.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <section id="farsight_logo" class="d-none d-lg-block">
+      <div class="farsight-top-logo">
+        <img src="./images/logo.png" alt="" width="288px" />
+      </div>
+    </section>
+    <nav
+      class="navbar navbar-light sticky-top navbar-expand-md justify-content-center"
+      id="farsight_nav"
+    >
+      <div
+        class="fs-container d-flex justify-content-between align-items-center position-relative"
+      >
+        <a href="/" class="navbar-brand mr-0"
+          ><img
+            class="logo-primary d-none d-lg-block hide"
+            src="./images/logo.png"
+            height="50px"
+            alt=""
+          />
+          <img
+            class="logo-secondary d-lg-none"
+            src="./images/logo.png"
+            alt=""
+            height="50px"
+            style="opacity: 1"
+          />
+        </a>
+        <a href="#" class="d-lg-none open-menu" style="font-size: 22px"
+          ><i class="fas fa-bars"></i
+        ></a>
+        <div
+          class="justify-content-between align-items-center w-100 d-none d-lg-flex"
+        >
+          <ul
+            class="navbar-nav mx-auto text-center"
+            style="flex-direction: row"
+          >
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Top Stories<span class="sr-only"></span
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Economy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Envionment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Business</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Finance</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <nav class="sidebar bg-news-primary text-right">
+      <div class="dismiss">&times;</div>
+
+      <div class="logo mt-5">
+        <a href="#">
+          <img src="./images/logo.png" alt="" width="200px" />
+        </a>
+      </div>
+
+      <ul class="menu-elements sidebar-list">
+        <li class="active">
+          <a class="sidebar-link" href="#">Top Stories</a>
+        </li>
+        <li>
+          <a class="sidebar-link" href="#">Finance</a>
+        </li>
+        <li>
+          <a class="sidebar-link" href="#">Envionment</a>
+        </li>
+        <li>
+          <a class="sidebar-link" href="#">Business</a>
+        </li>
+        <li>
+          <a class="sidebar-link" href="#">Finance</a>
+        </li>
+      </ul>
+    </nav>
+    <section id="interview">
+      <div class="fs-container">
+        <div class="featured-title">
+          <p>Interview</p>
+        </div>
+        <div class="featured-news">
+          <div class="row mt-4">
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="news-secondary text-center">
+                <div class="feaured-cover-image">
+                  <a href="#">
+                    <img
+                      src="https://randomuser.me/api/portraits/men/1.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <p class="news-category"><a href="#">Science</a></p>
+                <div class="news-secondary-content">
+                  <p class="news-title news-title-featured">
+                    <a href="#"
+                      >How an Aboriginal approach to mental health is helping
+                      farmers deal with drought</a
+                    >
+                  </p>
+
+                  <p class="news-author">
+                    <span class="author-name"
+                      >By <a href="#">Anish Shrestha</a></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="news-secondary text-center">
+                <div class="feaured-cover-image">
+                  <a href="#">
+                    <img
+                      src="https://randomuser.me/api/portraits/women/7.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <p class="news-category"><a href="#">Science</a></p>
+                <div class="news-secondary-content">
+                  <p class="news-title news-title-featured">
+                    <a href="#"
+                      >Oversold, overhyped, evidence-free development</a
+                    >
+                  </p>
+
+                  <p class="news-author">
+                    <span class="author-name"
+                      >By <a href="#">Anish Shrestha</a></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="news-secondary text-center">
+                <div class="feaured-cover-image">
+                  <a href="#">
+                    <img
+                      src="https://randomuser.me/api/portraits/men/8.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <p class="news-category"><a href="#">Science</a></p>
+                <div class="news-secondary-content">
+                  <p class="news-title news-title-featured">
+                    <a href="#"
+                      >Anatomy of a police investigation: have authorities in
+                      Nepal’s Bardiya district passed a murder off as
+                      suicide?</a
+                    >
+                  </p>
+
+                  <p class="news-author">
+                    <span class="author-name"
+                      >By <a href="#">Anish Shrestha</a></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="news-secondary text-center">
+                <div class="feaured-cover-image">
+                  <a href="#">
+                    <img
+                      src="https://randomuser.me/api/portraits/women/9.jpg"
+                      alt=""
+                      width="100%"
+                    />
+                  </a>
+                </div>
+                <p class="news-category"><a href="#">Science</a></p>
+                <div class="news-secondary-content">
+                  <p class="news-title news-title-featured">
+                    <a href="#"
+                      >How visibility is changing the lives of LGBTIQ+ people in
+                      Nepal</a
+                    >
+                  </p>
+
+                  <p class="news-author">
+                    <span class="author-name"
+                      >By <a href="#">Anish Shrestha</a></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="news-secondary text-center">
+                <div class="feaured-cover-image">
+                  <a href="#">
+                    <img
+                      src="https://randomuser.me/api/portraits/men/10.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <p class="news-category"><a href="#">Science</a></p>
+                <div class="news-secondary-content">
+                  <p class="news-title news-title-featured">
+                    <a href="#"
+                      >How an Aboriginal approach to mental health is helping
+                      farmers deal with drought</a
+                    >
+                  </p>
+
+                  <p class="news-author">
+                    <span class="author-name"
+                      >By <a href="#">Anish Shrestha</a></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="news-secondary text-center">
+                <div class="feaured-cover-image">
+                  <a href="#">
+                    <img
+                      src="https://randomuser.me/api/portraits/men/11.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <p class="news-category"><a href="#">Science</a></p>
+                <div class="news-secondary-content">
+                  <p class="news-title news-title-featured">
+                    <a href="#"
+                      >Anatomy of a police investigation: have authorities in
+                      Nepal’s Bardiya district passed a murder off as
+                      suicide?</a
+                    >
+                  </p>
+
+                  <p class="news-author">
+                    <span class="author-name"
+                      >By <a href="#">Anish Shrestha</a></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="news-secondary text-center">
+                <div class="feaured-cover-image">
+                  <a href="#">
+                    <img
+                      src="https://randomuser.me/api/portraits/women/12.jpg"
+                      alt=""
+                      width="100%"
+                    />
+                  </a>
+                </div>
+                <p class="news-category"><a href="#">Science</a></p>
+                <div class="news-secondary-content">
+                  <p class="news-title news-title-featured">
+                    <a href="#"
+                      >How visibility is changing the lives of LGBTIQ+ people in
+                      Nepal</a
+                    >
+                  </p>
+
+                  <p class="news-author">
+                    <span class="author-name"
+                      >By <a href="#">Anish Shrestha</a></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="news-secondary text-center">
+                <div class="feaured-cover-image">
+                  <a href="#">
+                    <img
+                      src="https://randomuser.me/api/portraits/men/13.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <p class="news-category"><a href="#">Science</a></p>
+                <div class="news-secondary-content">
+                  <p class="news-title news-title-featured">
+                    <a href="#"
+                      >How an Aboriginal approach to mental health is helping
+                      farmers deal with drought</a
+                    >
+                  </p>
+
+                  <p class="news-author">
+                    <span class="author-name"
+                      >By <a href="#">Anish Shrestha</a></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="news-secondary text-center">
+                <div class="feaured-cover-image">
+                  <a href="#">
+                    <img
+                      src="https://randomuser.me/api/portraits/men/14.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <p class="news-category"><a href="#">Science</a></p>
+                <div class="news-secondary-content">
+                  <p class="news-title news-title-featured">
+                    <a href="#"
+                      >Anatomy of a police investigation: have authorities in
+                      Nepal’s Bardiya district passed a murder off as
+                      suicide?</a
+                    >
+                  </p>
+
+                  <p class="news-author">
+                    <span class="author-name"
+                      >By <a href="#">Anish Shrestha</a></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="news-secondary text-center">
+                <div class="feaured-cover-image">
+                  <a href="#">
+                    <img
+                      src="https://randomuser.me/api/portraits/women/15.jpg"
+                      alt=""
+                      width="100%"
+                    />
+                  </a>
+                </div>
+                <p class="news-category"><a href="#">Science</a></p>
+                <div class="news-secondary-content">
+                  <p class="news-title news-title-featured">
+                    <a href="#"
+                      >How visibility is changing the lives of LGBTIQ+ people in
+                      Nepal</a
+                    >
+                  </p>
+
+                  <p class="news-author">
+                    <span class="author-name"
+                      >By <a href="#">Anish Shrestha</a></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="news-secondary text-center">
+                <div class="feaured-cover-image">
+                  <a href="#">
+                    <img
+                      src="https://randomuser.me/api/portraits/men/16.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <p class="news-category"><a href="#">Science</a></p>
+                <div class="news-secondary-content">
+                  <p class="news-title news-title-featured">
+                    <a href="#"
+                      >How an Aboriginal approach to mental health is helping
+                      farmers deal with drought</a
+                    >
+                  </p>
+
+                  <p class="news-author">
+                    <span class="author-name"
+                      >By <a href="#">Anish Shrestha</a></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="news-secondary text-center">
+                <div class="feaured-cover-image">
+                  <a href="#">
+                    <img
+                      src="https://randomuser.me/api/portraits/men/17.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <p class="news-category"><a href="#">Science</a></p>
+                <div class="news-secondary-content">
+                  <p class="news-title news-title-featured">
+                    <a href="#"
+                      >How an Aboriginal approach to mental health is helping
+                      farmers deal with drought</a
+                    >
+                  </p>
+
+                  <p class="news-author">
+                    <span class="author-name"
+                      >By <a href="#">Anish Shrestha</a></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="pagination">
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+              <span class="sr-only">Previous</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link active" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+              <span class="sr-only">Next</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <footer id="fs-footer">
+      <div class="fs-footer">
+        <div class="footer-widgets">
+          <div class="fs-container">
+            <div class="row text-center text-md-left">
+              <div class="col-lg-4 col-md-6 mb-4 mb-sm-0">
+                <div class="row h-100">
+                  <div class="col-12 my-auto">
+                    <a href="#">
+                      <img
+                        src="./images/logo.png"
+                        alt=""
+                        class="fs-footer-logo"
+                        width="300px"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-4 mb-sm-0">
+                <ul class="footer-links">
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Jobs</a></li>
+                  <li><a href="#">Write for Us</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 col-md-12 mb-4 mb-sm-0 mt-4 mt-lg-0">
+                <ul class="insights">
+                  <li><a href="#">Insight</a></li>
+                  <li><a href="#">In-depth Analysis</a></li>
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">Research</a></li>
+                  <li><a href="#">Investigation</a></li>
+                  <li><a href="#">Expert Views</a></li>
+                  <li><a href="#">Intelligence</a></li>
+                  <li><a href="#">Anatomy of Complex Issues</a></li>
+                </ul>
+
+                <hr style="border-color: #ffffff33" />
+                <p>Subscribe our Newsletter :</p>
+                <div class="sub-form">
+                  <form action="">
+                    <div class="input-group mb-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Enter your email..."
+                        aria-label="Recipient's username"
+                        aria-describedby="basic-addon2"
+                        style="border-radius: 0"
+                      />
+                      <button
+                        class="btn btn-secondary input-group-append"
+                        style="border-radius: 0"
+                      >
+                        SUBSCRIBE
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-social">
+          <div class="fs-container">
+            <div class="row justify-content-center text-center">
+              <div class="col-12">
+                <ul class="social-links">
+                  <li>
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12">
+                <p class="fs-copyright m-0">
+                  &copy; 2020 FarSight Inc. | All Rights Reserved
+                </p>
+                <div
+                  class="d-lg-flex align-items-center justify-content-center"
+                >
+                  <p class="m-0">Powered By :</p>
+                  <a href="#"
+                    ><img
+                      src="./images/saviskar-inverse.png"
+                      alt=""
+                      height="60px"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fas fa-chevron-up"></i>
+      </button>
+    </footer>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="vendors/slick/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

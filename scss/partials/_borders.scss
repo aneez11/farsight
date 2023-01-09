@@ -1,0 +1,48 @@
+@use '../variables' as var;
+.border-section {
+  border-top: 2px solid #9fbb92;
+  // border-bottom: 2px solid #0a5fb1;
+}
+.border-top-primary {
+  border-top: 3px solid var.$color-secondary;
+}
+.col-bottom-border {
+  border-bottom: 1px solid #e2e2e2;
+}
+.col-top-border {
+  border-top: 1px solid #e2e2e2;
+}
+// @media (min-width: var.$breakpoint-sm) {
+//   .border-top-sm {
+//     border-top: 1px solid #e2e2e2;
+//   }
+// }
+@media (min-width: var.$breakpoint-md) {
+  .row-bordered {
+    .col-bordered:last-child {
+      border-right: unset;
+    }
+    .col-bordered:nth-child(odd) {
+      border-right: 1px solid #e2e2e2;
+    }
+  }
+  .border-top-md {
+    border-top: 1px solid #e2e2e2;
+  }
+}
+@media (min-width: var.$breakpoint-lg) {
+  .border-right-lg {
+    border-right: 1px solid #e2e2e2;
+  }
+  .row-bordered {
+    .col-bordered:not(last-child) {
+      border-right: 1px solid #e2e2e2;
+    }
+  }
+}
+
+@media (max-width: var.$breakpoint-sm) {
+  .border-top-sm {
+    border-top: 1px solid #e2e2e2;
+  }
+}

@@ -1,0 +1,10 @@
+.news-tertiary {
+  display: flex;
+  margin-bottom: 15px;
+  .cover-image {
+    width: 110px;
+    min-width: 110px;
+    max-width: 110px;
+    margin-right: 15px;
+  }
+}

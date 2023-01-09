@@ -1,0 +1,25 @@
+@use '../variables' as var;
+#pagination {
+  .page-item .page-link {
+    margin: 10px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: rgba($color: var.$color-tertiary, $alpha: 0.1);
+    color: black;
+    font-weight: bold;
+    &.active {
+      background-color: rgba($color: var.$color-secondary, $alpha: 0.8);
+      color: white;
+    }
+    &:hover {
+      background-color: rgba($color: var.$color-secondary, $alpha: 0.5);
+      transition: 0.3s all;
+    }
+  }
+}

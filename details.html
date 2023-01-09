@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farsight</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="vendors/slick/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <style>
+      .light-image {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="farsight_logo" class="d-none d-lg-block">
+      <div class="farsight-top-logo">
+        <img src="./images/logo.png" alt="" width="288px" />
+      </div>
+    </section>
+    <nav
+      class="navbar navbar-light sticky-top navbar-expand-md justify-content-center"
+      id="farsight_nav"
+    >
+      <div
+        class="fs-container d-flex justify-content-between align-items-center position-relative"
+      >
+        <a href="/" class="navbar-brand mr-0"
+          ><img
+            class="logo-primary d-none d-lg-block hide"
+            src="./images/logo.png"
+            height="50px"
+            alt=""
+          />
+          <img
+            class="logo-secondary d-lg-none"
+            src="./images/logo.png"
+            alt=""
+            height="50px"
+            style="opacity: 1"
+          />
+        </a>
+        <a href="#" class="d-lg-none open-menu" style="font-size: 22px"
+          ><i class="fas fa-bars"></i
+        ></a>
+        <div
+          class="justify-content-between align-items-center w-100 d-none d-lg-flex"
+        >
+          <ul
+            class="navbar-nav mx-auto text-center"
+            style="flex-direction: row"
+          >
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Top Stories<span class="sr-only"></span
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Economy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Envionment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Business</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Finance</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <nav class="sidebar bg-news-primary text-right">
+      <div class="dismiss">&times;</div>
+
+      <div class="logo mt-5">
+        <a href="#">
+          <img src="./images/logo.png" alt="" width="200px" />
+        </a>
+      </div>
+
+      <ul class="menu-elements sidebar-list">
+        <li class="active">
+          <a class="sidebar-link" href="#">Top Stories</a>
+        </li>
+        <li>
+          <a class="sidebar-link" href="#">Finance</a>
+        </li>
+        <li>
+          <a class="sidebar-link" href="#">Envionment</a>
+        </li>
+        <li>
+          <a class="sidebar-link" href="#">Business</a>
+        </li>
+        <li>
+          <a class="sidebar-link" href="#">Finance</a>
+        </li>
+      </ul>
+    </nav>
+    <section id="news_details">
+      <div class="fs-container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="heading-section">
+              <p class="category">Argument</p>
+              <p class="news-title news-details-title">
+                Nepal confirms record increase of 5,008 new infections in a
+                single day
+              </p>
+              <p class="subtitle">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s.
+              </p>
+              <div class="author-details d-sm-flex justify-content-between">
+                <p class="m-0">
+                  By <a href="#" class="author-name">Anish Joshi Shrestha</a> |
+                  <span class="post-date">Aug 31, 2020</span>
+                </p>
+                <ul class="social-share mt-3 mt-sm-0">
+                  <li>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fas fa-share"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <figure>
+                <img
+                  class="light-image"
+                  src="https://picsum.photos/id/372/1366/768"
+                  data-src="https://picsum.photos/id/372/1366/768"
+                  data-sub-html="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam totam tempore nemo cumque quia ea, dolorum minima"
+                  width="100%"
+                />
+                <figcaption>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Magnam totam tempore nemo cumque quia ea, dolorum minima,
+                  <span class="source"
+                    >Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit.</span
+                  >
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="description-section">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                <a href="#">THis is an anchor text</a>
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged.
+              </p>
+              <a href="#">THis is an anchor text</a>
+              <p>
+                <img
+                  class="float-img"
+                  alt="आज काठमाडौंबाट फर्पिङ सिस्नेरी हुँदै मकवानपुरतर्फ जाने आउने सवारी साधनको आवागमन रोकिएको छ ।"
+                  src="https://picsum.photos/id/372/1366/768"
+                  style="width: 50%; float: right; height: 50%"
+                />
+              </p>
+
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged.
+              </p>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged.
+              </p>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged.
+              </p>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged.
+              </p>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged.
+              </p>
+              <p>
+                <img
+                  class="float-img"
+                  alt="आज काठमाडौंबाट फर्पिङ सिस्नेरी हुँदै मकवानपुरतर्फ जाने आउने सवारी साधनको आवागमन रोकिएको छ ।"
+                  src="https://picsum.photos/id/372/1366/768"
+                  style="width: 50%; float: left; height: 50%"
+                />
+              </p>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged.
+              </p>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged.
+              </p>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged.
+              </p>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged.
+              </p>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged.
+              </p>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged.
+              </p>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged.
+              </p>
+              <ul>
+                <li>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </li>
+                <li>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </li>
+                <li>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </li>
+                <li>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </li>
+                <li>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </li>
+              </ul>
+              <figure>
+                <img
+                  class="light-image"
+                  src="https://picsum.photos/id/32/1366/768"
+                  data-src="https://picsum.photos/id/32/1366/768"
+                  data-sub-html="500s, when an unknown printer took a galley of type and scrambled it to make a type"
+                  width="100%"
+                />
+                <figcaption>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Magnam totam tempore nemo cumque quia ea, dolorum minima,
+                  <span class="source"
+                    >Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit.</span
+                  >
+                </figcaption>
+              </figure>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged.
+              </p>
+            </div>
+            <p class="author-info">
+              <strong>Magnum Hunter</strong> ia a Nepali Journalist and have a
+              wide vision on Political issues on the country.
+            </p>
+            <ul class="social-share mt-4">
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-share"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="read_more" class="mt-5">
+      <div class="container">
+        <p class="text-center more-heading">Read More Stories</p>
+        <div class="latest-news">
+          <div class="row mt-3 pb-3 col-bottom-border row-bordered">
+            <div class="col-lg-4 mb-4 mb-sm-0">
+              <div class="news-secondary">
+                <div class="cover-image">
+                  <div class="ratio-image ratio-4-3">
+                    <a href="#">
+                      <img
+                        class="ratio-content"
+                        src="https://picsum.photos/id/96/1366/768"
+                        alt=""
+                        width="100%"
+                      />
+                    </a>
+                  </div>
+                </div>
+
+                <div class="news-secondary-content">
+                  <a href="#" class="news-category">Science</a>
+                  <p class="news-title news-title-latest">
+                    <a href="#"
+                      >Dr KC ends hunger strike after govt agrees to his
+                      demands</a
+                    >
+                  </p>
+
+                  <p class="news-description news-description-primary">
+                    Public support for Dr KC’s cause has forced the government’s
+                    hand, but as always, questions remain about the agreement’s
+                    implementation
+                  </p>
+                  <p class="news-author">by <a href="#">Anish Shrestha</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-4 mb-sm-0">
+              <div class="news-secondary">
+                <div class="cover-image">
+                  <div class="ratio-image ratio-4-3">
+                    <a href="#">
+                      <img
+                        class="ratio-content"
+                        src="https://picsum.photos/id/965/1366/768"
+                        alt=""
+                        width="100%"
+                      />
+                    </a>
+                  </div>
+                </div>
+
+                <div class="news-secondary-content">
+                  <p class="news-category"><a href="#">Politics</a></p>
+                  <p class="news-title news-title-latest">
+                    <a href="#"
+                      >Nepal confirms record increase of 5,008 new infections in
+                      a single day</a
+                    >
+                  </p>
+
+                  <p class="news-description news-description-primary">
+                    The infection count could double in 20 days–such numbers
+                    could break the country’s health system
+                  </p>
+                  <p class="news-author">by <a href="#">Anish Shrestha</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-4 mb-sm-0">
+              <div class="news-secondary">
+                <div class="cover-image">
+                  <div class="ratio-image ratio-4-3">
+                    <a href="#">
+                      <img
+                        class="ratio-content"
+                        src="https://picsum.photos/id/926/1366/768"
+                        alt=""
+                        width="100%"
+                      />
+                    </a>
+                  </div>
+                </div>
+
+                <div class="news-secondary-content">
+                  <p class="news-category"><a href="#">Technology</a></p>
+                  <p class="news-title news-title-latest">
+                    <a href="#"
+                      >Nepal’s Covid-19 infections surpass the 100,000 mark
+                      while fatalities reach 600</a
+                    >
+                  </p>
+
+                  <p class="news-description news-description-primary">
+                    At 100,000 cases, the coronavirus pandemic in Nepal appears
+                    nowhere near ending
+                  </p>
+                  <p class="news-author">by <a href="#">Anish Shrestha</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="fs-footer">
+      <div class="fs-footer">
+        <div class="footer-widgets">
+          <div class="fs-container">
+            <div class="row text-center text-md-left">
+              <div class="col-lg-4 col-md-6 mb-4 mb-sm-0">
+                <div class="row h-100">
+                  <div class="col-12 my-auto">
+                    <a href="#">
+                      <img
+                        src="./images/logo.png"
+                        alt=""
+                        class="fs-footer-logo"
+                        width="300px"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-4 mb-sm-0">
+                <ul class="footer-links">
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Jobs</a></li>
+                  <li><a href="#">Write for Us</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 col-md-12 mb-4 mb-sm-0 mt-4 mt-lg-0">
+                <ul class="insights">
+                  <li><a href="#">Insight</a></li>
+                  <li><a href="#">In-depth Analysis</a></li>
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">Research</a></li>
+                  <li><a href="#">Investigation</a></li>
+                  <li><a href="#">Expert Views</a></li>
+                  <li><a href="#">Intelligence</a></li>
+                  <li><a href="#">Anatomy of Complex Issues</a></li>
+                </ul>
+
+                <hr style="border-color: #ffffff33" />
+                <p>Subscribe our Newsletter :</p>
+                <div class="sub-form">
+                  <form action="">
+                    <div class="input-group mb-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Enter your email..."
+                        aria-label="Recipient's username"
+                        aria-describedby="basic-addon2"
+                        style="border-radius: 0"
+                      />
+                      <button
+                        class="btn btn-secondary input-group-append"
+                        style="border-radius: 0"
+                      >
+                        SUBSCRIBE
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-social">
+          <div class="fs-container">
+            <div class="row justify-content-center text-center">
+              <div class="col-12">
+                <ul class="social-links">
+                  <li>
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12">
+                <p class="fs-copyright m-0">
+                  &copy; 2020 FarSight Inc. | All Rights Reserved
+                </p>
+                <div
+                  class="d-lg-flex align-items-center justify-content-center"
+                >
+                  <p class="m-0">Powered By :</p>
+                  <a href="#"
+                    ><img
+                      src="./images/saviskar-inverse.png"
+                      alt=""
+                      height="60px"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fas fa-chevron-up"></i>
+      </button>
+    </footer>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="vendors/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery-all.min.js"></script>
+    <script src="./js/main.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("body").lightGallery({
+          selector: ".light-image",
+          loop: true,
+          fourceAutoply: false,
+          thumbnail: false,
+          actualSize: false,
+          mousewheel: true,
+          pager: $(window).width() >= 768 ? true : false,
+          scale: 1,
+        });
+      });
+
+      if ($(".float-img").length) {
+        $(".float-img").each(function (index) {
+          let floated = $(this);
+          let caption = floated.attr("alt");
+          console.log(floated.css("float"));
+          if (floated.parent().is("p")) {
+            floated.unwrap();
+            floated.wrap(
+              "<div class='float-img-wrapper' style='float:" +
+                floated.css("float") +
+                ";width:50%'></div>"
+            );
+            $("<p class='float-img-caption'>" + caption + "</p>").insertAfter(
+              floated
+            );
+            floated.removeAttr("style");
+            floated.css("width", "100%");
+            floated.addClass("light-image");
+            floated.attr("data-src", floated.attr("src"));
+            floated.attr("data-sub-html", caption);
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

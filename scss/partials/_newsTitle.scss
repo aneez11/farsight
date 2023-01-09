@@ -1,0 +1,78 @@
+@use "../variables" as var;
+.news-title {
+  color: var.$text-primary;
+  // font-family: "Abril Fatface", cursive;
+  font-family: "Californian FB", "serif";
+  font-weight: bolder;
+  &.news-title-breaking {
+    font-size: 45px;
+    // font-weight: 300;
+    padding: {
+      left: 15px;
+      right: 15px;
+    }
+    margin-top: 15px;
+  }
+  &.news-title-primary {
+    font-size: 30px;
+    // line-height: 34px;
+    // font-weight: 700;
+    padding: {
+      left: 15px;
+      right: 15px;
+    }
+    margin-top: 15px;
+  }
+  &.news-title-secondary {
+    font-size: 24px;
+    // line-height: 24px;
+    margin-top: 15px;
+    // font-weight: 600;
+  }
+  &.news-title-tertiary {
+    font-size: 18px;
+    line-height: 24px;
+    // font-weight: 700;
+  }
+  &.news-title-latest {
+    font-size: 23px;
+    line-height: 27.6px;
+    // font-weight: 800;
+    margin-top: 15px;
+  }
+  &.news-title-featured {
+    font-size: 18px;
+    line-height: 23.94px;
+    a {
+      &:hover {
+        text-decoration: none !important;
+        color: var.$text-secondary !important;
+      }
+    }
+  }
+  &.news-details-title {
+    font-size: 33px;
+    // font-weight: 800;
+  }
+}
+.news-author {
+  font-size: 14px;
+  font-family: "Agency FB";
+  // font-weight: bold;
+  // letter-spacing: 1px;
+  // margin: 0;
+  .author-name {
+    // font-weight: 600;
+  }
+  .author-designation {
+    font-size: 12px;
+    // font-weight: 400;
+  }
+}
+@media (max-width: var.$breakpoint-lg) {
+  .news-title {
+    &.news-title-breaking {
+      font-size: 30px;
+    }
+  }
+}

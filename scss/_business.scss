@@ -1,0 +1,93 @@
+@use "./variables" as var;
+#business_news {
+  // margin: {
+  //   top: 20pt;
+  // }
+  .business-title {
+    border-bottom: 2px solid var.$color-secondary;
+    margin-top: 15px;
+    margin-bottom: 0;
+    color: var.$color-secondary;
+    span {
+      font-size: 18px;
+      line-height: 15px;
+      letter-spacing: 1px;
+      font-weight: 700;
+      font-style: italic;
+      text-transform: uppercase;
+      padding: 9px;
+      display: inline-block;
+      border: 2px solid var.$color-secondary;
+      border-bottom: none;
+      margin: 0;
+    }
+  }
+  .latest-news {
+    .news-secondary {
+      padding-top: 15px;
+      .cover-image {
+        width: 80%;
+        margin: auto;
+      }
+    }
+    .news-secondary-content {
+      text-align: center;
+    }
+    .news-author {
+      text-transform: uppercase;
+      font-size: 14px;
+      .news-category {
+        a {
+          color: var.$text-secondary;
+          font-weight: bold;
+          border-right: 2px solid black;
+          padding-right: 5px;
+        }
+      }
+    }
+  }
+  @media (min-width: var.$breakpoint-lg) {
+    #business_news {
+      .row-bordered {
+        .business-border:not(:nth-child(3n)) {
+          &::after {
+            content: "";
+            border-right: 1px solid #e2e2e2;
+            position: absolute;
+            right: 0;
+            top: 15px;
+            bottom: 15px;
+            //   height: 90%;
+          }
+        }
+        .business-border:last-child {
+          &::after {
+            border: none;
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: var.$breakpoint-sm) {
+    #business_news {
+      .row-bordered {
+        .business-border:not(:nth-child(2n)) {
+          &::after {
+            content: "";
+            border-right: 1px solid #e2e2e2;
+            position: absolute;
+            right: 0;
+            top: 15px;
+            bottom: 15px;
+            //   height: 90%;
+          }
+        }
+        .business-border:last-child {
+          &::after {
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}

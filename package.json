@@ -1,0 +1,17 @@
+{
+  "name": "farsight",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "dart-sass --watch scss:css",
+    "generate": "dart-sass scss:css",
+    "build": "dart-sass scss/main.scss:css/main.min.css --style compressed"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dart-sass": "^1.25.0"
+  }
+}

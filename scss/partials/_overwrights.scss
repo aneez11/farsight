@@ -1,0 +1,72 @@
+@use "../variables" as var;
+.fs-container {
+  // container overwright
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px;
+  @media (max-width: "1366px") {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+}
+img {
+  border-radius: 0;
+}
+a {
+  color: var.$text-primary;
+  // text-decoration: none;
+  transition: all 0.3s;
+  &:hover {
+    text-decoration: none;
+    color: var.$text-secondary;
+    transition: all 0.3s;
+  }
+}
+.hide {
+  opacity: 0;
+  transition: 0.5s all;
+}
+.show {
+  opacity: 1;
+  transition: 0.5s all;
+}
+.slick-next:before,
+.slick-prev:before {
+  color: var.$text-secondary;
+  font-size: 30px;
+}
+.slick-prev {
+  right: 10px;
+  position: absolute;
+  bottom: 14px;
+  left: -70px;
+  /* top: 110%; */
+  z-index: 2;
+}
+.slick-next {
+  right: 10px;
+  position: absolute;
+  right: -70px;
+  // top: 110%;
+  z-index: 2;
+}
+
+.slick-dots {
+  bottom: -30px;
+  li button:before {
+    font-size: 12px;
+  }
+  .slick-active {
+    button:before {
+      font-size: 16px;
+      color: var.$text-secondary !important;
+    }
+  }
+}
+@media (max-width: var.$breakpoint-md) {
+  .slick-next,
+  .slick-prev {
+    display: none !important;
+  }
+}

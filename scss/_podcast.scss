@@ -1,0 +1,50 @@
+@use "./variables" as var;
+.podcast-page {
+  .pod-header {
+    // background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    .pod-head-content {
+      width: 70%;
+      margin: auto;
+      .head-text {
+        width: 80%;
+        .title {
+          font-family: "CalifornianFB";
+          //   font-weight: bold;
+          font-size: 4rem;
+          .text-featured {
+            color: var.$color-quaternary;
+          }
+        }
+        .sub-title {
+          line-height: 1.2rem;
+          color: gray;
+        }
+        .pod-links {
+          display: flex;
+          gap: 20px;
+          .pod-link {
+            img {
+              height: 30px;
+              width: 30px;
+              object-fit: contain;
+            }
+          }
+        }
+      }
+      .row {
+        align-items: center;
+        height: 100%;
+        .col-md-6 {
+          min-height: 100vh;
+          display: flex;
+          align-items: center;
+          &.right-col {
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}
