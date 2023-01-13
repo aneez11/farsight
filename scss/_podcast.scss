@@ -1,47 +1,130 @@
 @use "./variables" as var;
+@import "./breakpoints";
 .podcast-page {
   .pod-header {
     // background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: contain;
+    background-position: 50%;
+    @include media("<=lgPhone") {
+      background-position: 50%;
+    }
+
     .pod-head-content {
-      width: 70%;
-      margin: auto;
-      .head-text {
-        width: 80%;
-        .title {
-          font-family: "CalifornianFB";
-          //   font-weight: bold;
-          font-size: 4rem;
-          .text-featured {
-            color: var.$color-quaternary;
-          }
-        }
-        .sub-title {
-          line-height: 1.2rem;
-          color: gray;
-        }
-        .pod-links {
-          display: flex;
-          gap: 20px;
-          .pod-link {
-            img {
-              height: 30px;
-              width: 30px;
-              object-fit: contain;
-            }
-          }
-        }
+      width: 80%;
+      @include media("<=tablet") {
+        width: 100%;
+        text-align: center;
       }
+      margin: auto;
+
       .row {
         align-items: center;
         height: 100%;
-        .col-md-6 {
+        [class*="col-"] {
           min-height: 75vh;
           display: flex;
           align-items: center;
+          @include media("<=largeTablet") {
+            min-height: auto;
+          }
+          // display: flex;
+          // align-items: center;
+          &.left-col {
+            .head-text {
+              // width: 90%;
+              @include media("<=tablet") {
+                height: 80vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+              }
+              @include media(">tablet", "<=largeTablet") {
+                height: 50vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+              }
+              .title {
+                font-family: "CalifornianFB";
+                //   font-weight: bold;
+                font-size: 3rem;
+                @include media("<=lgPhone") {
+                  font-size: 1.8rem;
+                }
+                @include media(">largeTablet", "<=desktop") {
+                  font-size: 2rem;
+                }
+                .text-featured {
+                  color: var.$color-quaternary;
+                }
+              }
+              .sub-title {
+                line-height: 1.5rem;
+                color: rgb(39, 39, 39);
+                display: flex;
+                font-weight: bold;
+                font-size: 1.2rem;
+                margin-top: 10px;
+                @include media("<=tablet") {
+                  flex-direction: column;
+                  font-size: 1rem;
+                  text-align: center;
+                }
+                @include media(">largeTablet", "<=desktop") {
+                  font-size: 1rem;
+                  line-height: 1.3rem;
+                }
+                .key {
+                  width: 160px;
+                  color: var.$color-quaternary;
+                  @include media("<=tablet") {
+                    width: unset;
+                  }
+                }
+              }
+              .links {
+                margin-top: 80px;
+                .pod-title {
+                  font-weight: bolder;
+                  font-family: "Garamond";
+                }
+                .pod-links {
+                  display: flex;
+                  gap: 20px;
+                  @include media("<=tablet") {
+                    justify-content: center;
+                  }
+                  .pod-link {
+                    img {
+                      height: 30px;
+                      width: 30px;
+                      object-fit: contain;
+                    }
+                  }
+                }
+              }
+            }
+            @include media("<=lgPhone") {
+              // order: 2;
+            }
+          }
           &.right-col {
-            justify-content: center;
+            display: flex;
+            justify-content: end;
+            @include media("<largeTablet") {
+              // order: 1;
+              display: none;
+            }
+            .pod-cover {
+              width: 390px;
+              object-fit: contain;
+              aspect-ratio: 1;
+              @include media("<=lgPhone") {
+                margin-top: 15px;
+                width: 100%;
+              }
+            }
           }
         }
       }
@@ -50,5 +133,9 @@
   .podcast-content {
     width: 80%;
     margin: auto;
+    margin-top: 100px;
+    @include media("<=lgPhone") {
+      width: 100%;
+    }
   }
 }
