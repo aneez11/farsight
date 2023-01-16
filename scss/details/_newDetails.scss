@@ -1,5 +1,6 @@
 @use "../variables" as var;
 @use "./readMore";
+@import "../breakpoints";
 #news_details_update {
   margin-top: 30px;
   .category {
@@ -68,6 +69,9 @@
         left: 13%;
         right: 13%;
       }
+      @include media("<=lgPhone") {
+        margin: unset;
+      }
     }
     .first-lettered::first-letter {
       color: var.$color-quaternary;
@@ -93,11 +97,20 @@
       display: inline-block;
       margin: 1em;
       overflow: hidden;
+      @include media("<=lgPhone") {
+        margin: unset;
+      }
       &.left {
         float: left;
+        @include media("<=lgPhone") {
+          float: unset;
+        }
       }
       &.right {
         float: right;
+        @include media("<=lgPhone") {
+          float: unset;
+        }
       }
       .news {
         border: solid 1px var.$color-quaternary;
@@ -130,6 +143,9 @@
           }
           .recom-text {
             width: 150px;
+            @include media("<=lgPhone") {
+              width: 100%;
+            }
             p {
               margin: 0;
             }
@@ -342,7 +358,7 @@
 }
 
 @media (max-width: var.$breakpoint-lg) {
-  #news_details {
+  #news_details_update {
     .description-section {
       .author-share,
       p {
@@ -352,7 +368,7 @@
   }
 }
 @media (max-width: var.$breakpoint-sm) {
-  #news_details {
+  #news_details_update {
     .description-section {
       .author-share,
       p,
