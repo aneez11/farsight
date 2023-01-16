@@ -20,17 +20,30 @@
       height: 100%;
       width: 100%;
       padding: 15px;
+      @include media("<=lgPhone") {
+        position: unset;
+        padding: 0;
+      }
     }
     .heading-section {
       position: sticky;
       top: 80vh;
       padding: 15px;
       background: rgba($color: var.$color-quaternary, $alpha: 0.3);
+      @include media("<=lgPhone") {
+        background: transparent;
+        padding: 0;
+        padding-top: 15px;
+      }
       .subtitle {
         font-size: 1.25rem;
       }
       .news-title {
         color: white;
+        @include media("<=lgPhone") {
+          font-size: 1.5rem;
+          color: rgba($color: var.$color-quaternary, $alpha: 1);
+        }
       }
     }
   }
@@ -40,6 +53,9 @@
     font-family: "Garamond", "serif";
     color: black;
     margin-top: 40px;
+    @include media("<=lgPhone") {
+      margin-top: 0;
+    }
     .float-img-wrapper {
       // float: right;
       width: max-content;
