@@ -149,6 +149,11 @@
         padding: 15px;
         border-radius: 11px;
         box-shadow: 0 0 15px 0 rgba(#23475f, 0.1);
+        .podcast-description {
+          .read-more {
+            color: var.$color-secondary;
+          }
+        }
       }
     }
     .podcast-pagination {
