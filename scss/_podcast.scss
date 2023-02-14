@@ -181,3 +181,39 @@
     }
   }
 }
+.description-section {
+  .pod-play {
+    margin-bottom: 30px;
+    .pod-links {
+      display: flex;
+      gap: 15px;
+      @include media("<=tablet") {
+        gap: 5px;
+      }
+      flex-wrap: wrap;
+      margin-bottom: 15px;
+      // margin-top: 15px;
+      .pod-link img {
+        height: 30px;
+      }
+      a {
+        margin: 0 !important;
+      }
+    }
+    .pod-share {
+      .links-title {
+        display: flex;
+        justify-content: space-between;
+      }
+      .pod-title,
+      .social-share {
+        font-size: 14px !important;
+        margin: 0 !important;
+        margin-top: 5px !important;
+      }
+      .pod-title {
+        font-size: 20px !important;
+      }
+    }
+  }
+}
