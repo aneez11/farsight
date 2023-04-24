@@ -126,6 +126,10 @@
       @include media("<=lgPhone") {
         margin: unset;
       }
+      .news {
+        padding: 0;
+        margin: 0;
+      }
       &.left {
         float: left;
         @include media("<=lgPhone") {
@@ -138,12 +142,39 @@
           float: unset;
         }
       }
-      .news {
+      .recom-body {
         border: solid 1px var.$color-quaternary;
         display: inline-block;
         margin: 0;
         padding: 1em;
         position: relative;
+        display: flex;
+        gap: 15px;
+        align-items: end;
+        .cover {
+          height: 100px;
+          width: 150px;
+          object-fit: cover;
+        }
+        .recom-text {
+          width: 150px;
+          @include media("<=lgPhone") {
+            width: 100%;
+          }
+          p {
+            margin: 0;
+          }
+          .recom-sub {
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+          }
+          .recom-title {
+            font-size: 1.2rem;
+            line-height: 1rem;
+          }
+        }
         &:before {
           background-color: #fff;
           bottom: -10%;
@@ -157,35 +188,6 @@
         > * {
           position: relative;
           z-index: 1;
-        }
-        .recom-body {
-          display: flex;
-          gap: 15px;
-          align-items: end;
-          .cover {
-            height: 100px;
-            width: 150px;
-            object-fit: cover;
-          }
-          .recom-text {
-            width: 150px;
-            @include media("<=lgPhone") {
-              width: 100%;
-            }
-            p {
-              margin: 0;
-            }
-            .recom-sub {
-              text-transform: uppercase;
-              font-size: 0.8rem;
-              font-weight: 600;
-              margin-bottom: 5px;
-            }
-            .recom-title {
-              font-size: 1.2rem;
-              line-height: 1rem;
-            }
-          }
         }
       }
     }
