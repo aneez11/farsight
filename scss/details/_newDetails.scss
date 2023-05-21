@@ -2,6 +2,11 @@
 @use "./readMore";
 @import "../breakpoints";
 #news_details_update {
+  @include media("<=lgPhone") {
+    .fs-container > .category {
+      display: none;
+    }
+  }
   margin-top: 30px;
   .category {
     text-transform: uppercase;
@@ -11,9 +16,29 @@
     margin: 0;
     margin-bottom: 10px;
   }
-
+  .subtitle {
+    font-size: 1.5rem;
+  }
   .cover-section {
     position: relative;
+    @include media("<=lgPhone") {
+      display: flex;
+      flex-direction: column;
+    }
+    .main-image {
+      position: relative;
+      @include media("<=lgPhone") {
+        order: 2;
+      }
+      figcaption {
+        position: absolute;
+        top: 0;
+        left: 15px;
+        @include media("<=lgPhone") {
+          position: unset;
+        }
+      }
+    }
     .cover-content {
       position: absolute;
       top: 0;
@@ -23,6 +48,7 @@
       @include media("<=lgPhone") {
         position: unset;
         padding: 0;
+        order: 1;
       }
     }
     .heading-section {
@@ -36,7 +62,7 @@
         padding-top: 15px;
       }
       .subtitle {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
       }
       .news-title {
         color: white;
@@ -70,6 +96,9 @@
       font-size: 14px !important;
       border-bottom: 1px solid var.$color-secondary;
     }
+    table {
+      width: 100%;
+    }
     .author-share,
     h1,
     h2,
@@ -82,11 +111,17 @@
     ol,
     a {
       margin: {
-        left: 13%;
-        right: 13%;
+        left: 8%;
+        right: 8%;
       }
       @include media("<=lgPhone") {
         margin: unset;
+      }
+    }
+    iframe {
+      width: 100%;
+      canvas {
+        height: 100px !important;
       }
     }
     .first-lettered::first-letter {
@@ -150,7 +185,7 @@
         position: relative;
         display: flex;
         gap: 15px;
-        align-items: end;
+        // align-items: end;
         .cover {
           height: 100px;
           width: 150px;
