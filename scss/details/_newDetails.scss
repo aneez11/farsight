@@ -118,12 +118,16 @@
         margin: unset;
       }
     }
-    iframe {
-      width: 100%;
-      canvas {
-        height: 100px !important;
-      }
-    }
+    // iframe {
+    //   transform: scale(0.5);
+    //   display: flex;
+    //   justify-content: flex-start;
+
+    //   width: 100%;
+    //   // canvas {
+    //   //   height: 100px !important;
+    //   // }
+    // }
     .first-lettered::first-letter {
       color: var.$color-quaternary;
       font-weight: bold;
@@ -211,7 +215,7 @@
           }
         }
         &:before {
-          background-color: #fff;
+          background-color: var.$bg-new;
           bottom: -10%;
           content: "";
           left: 0;
@@ -250,7 +254,7 @@
       }
 
       blockquote {
-        background-color: #fff;
+        background-color: var.$bg-new;
         border: solid 2px var.$color-quaternary;
         display: inline-block;
         margin: 0;

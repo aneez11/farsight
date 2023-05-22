@@ -20,6 +20,9 @@
           border-right: 1px solid black;
           padding-right: 5px;
           padding-left: 5px;
+          &:hover {
+            color: var.$color-secondary-hover;
+          }
         }
       }
     }

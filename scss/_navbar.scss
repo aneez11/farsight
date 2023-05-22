@@ -14,6 +14,7 @@
 }
 .navbar-light .navbar-nav .nav-link {
   color: black;
+  background-color: var.$bg-new;
 }
 .write {
   position: absolute;
@@ -23,15 +24,17 @@
   color: white;
   padding: 5px 15px;
   z-index: 2000;
+  width: -moz-fit-content;
   width: fit-content;
+
   &:hover {
-    background-color: var.$color-quaternary;
+    background-color: var.$color-secondary-hover;
     color: white;
   }
 }
 #farsight_nav {
   min-height: 76px !important;
-  background-color: white;
+  background-color: var.$bg-new;
   .fs-container {
     border-top: 1px solid rgba(0, 0, 0, 0.2);
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -42,6 +45,7 @@
 
   &.nav-shadow {
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.09);
+    background-color: white;
     .fs-container {
       border: none;
       @media (max-width: "1266px") {
@@ -120,7 +124,7 @@
         // }
         &:hover {
           // border-bottom: solid 3px var.$color-secondary;
-          color: var.$color-secondary;
+          color: var.$color-secondary-hover;
         }
       }
 
