@@ -2,6 +2,23 @@
 @use "./readMore";
 @import "../breakpoints";
 #news_details_update {
+  .instagram-media,
+  .twitter-tweet {
+    margin: auto !important;
+  }
+  .iframe-parent {
+    overflow: hidden;
+    padding-top: 56.25%;
+    position: relative;
+    & > iframe {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
   @include media("<=lgPhone") {
     .fs-container > .category {
       display: none;
@@ -18,6 +35,7 @@
   }
   .subtitle {
     font-size: 1.5rem;
+    margin-top: 30px;
   }
   .cover-section {
     position: relative;
@@ -32,8 +50,9 @@
       }
       figcaption {
         position: absolute;
-        top: 0;
-        left: 15px;
+        bottom: -30px;
+        left: 0;
+        right: 0;
         @include media("<=lgPhone") {
           position: unset;
         }
@@ -117,6 +136,9 @@
       @include media("<=lgPhone") {
         margin: unset;
       }
+    }
+    p > a {
+      margin: unset;
     }
     // iframe {
     //   transform: scale(0.5);
@@ -230,7 +252,88 @@
         }
       }
     }
+    .highlights-4 {
+      display: inline-block;
+      //   margin: 1em;
+      width: 100%;
+      overflow: hidden;
+      @keyframes clockwise {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes counter {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(-360deg);
+        }
+      }
+      .highlights-body {
+        background-color: var.$bg-new;
+        border: solid 2px var.$color-quaternary;
+        display: inline-block;
+        margin: 0;
+        padding: 1em;
+        position: relative;
+        width: 100%;
+        z-index: 1;
+        // font-weight: 600;
+        &:before {
+          animation: clockwise 30s infinite linear;
+          background-color: #fff;
+          bottom: 10%;
+          content: "";
+          left: 0;
+          opacity: 0.5;
+          position: absolute;
+          right: 0;
+          top: 10%;
+          z-index: -1;
+        }
+        &:after {
+          animation: counter 30s infinite linear;
+          background-color: #fff;
+          bottom: 10%;
+          content: "";
+          left: 0;
+          opacity: 0.5;
+          position: absolute;
+          right: 0;
+          top: 10%;
+          z-index: -1;
+        }
 
+        > * {
+          position: relative;
+          z-index: 1;
+        }
+      }
+      &.highlights-left {
+        float: left;
+        max-width: 50%;
+        margin-right: 1em;
+        @include media("<=lgPhone") {
+          float: unset;
+          max-width: 100%;
+          margin: unset;
+        }
+      }
+      &.highlights-right {
+        float: right;
+        max-width: 50%;
+        margin-left: 1em;
+        @include media("<=lgPhone") {
+          float: unset;
+          max-width: 100%;
+          margin: unset;
+        }
+      }
+    }
     .animated-border-quote {
       display: inline-block;
       //   margin: 1em;
@@ -301,11 +404,21 @@
         float: left;
         max-width: 50%;
         margin-right: 1em;
+        @include media("<=lgPhone") {
+          float: unset;
+          max-width: 100%;
+          margin: unset;
+        }
       }
       &.right-quote {
         float: right;
         max-width: 50%;
         margin-left: 1em;
+        @include media("<=lgPhone") {
+          float: unset;
+          max-width: 100%;
+          margin: unset;
+        }
       }
     }
 
