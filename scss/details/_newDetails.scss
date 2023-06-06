@@ -83,6 +83,15 @@
       .subtitle {
         font-size: 1.5rem;
       }
+      .category {
+        background-color: rgba($color: var.$color-quaternary, $alpha: 0.5);
+        color: white;
+        padding: 0 5px;
+        display: inline-block;
+        a {
+          margin: 0;
+        }
+      }
       .news-title {
         color: white;
         @include media("<=lgPhone") {
@@ -137,7 +146,12 @@
         margin: unset;
       }
     }
-    p > a {
+    // p {
+    //   & > a {
+    //     margin: unset;
+    //   }
+    // }
+    p a {
       margin: unset;
     }
     // iframe {
@@ -150,14 +164,16 @@
     //   //   height: 100px !important;
     //   // }
     // }
-    .first-lettered::first-letter {
-      color: var.$color-quaternary;
-      font-weight: bold;
-      margin-right: 1rem;
-      font-size: 5rem;
-      float: left;
-      margin-top: -1rem;
-      margin-bottom: -1rem;
+    .first-lettered {
+      &::first-letter {
+        color: var.$color-quaternary;
+        font-weight: bold;
+        margin-right: 0.6rem;
+        font-size: 4.3rem;
+        float: left;
+        margin-top: -0.8rem;
+        margin-bottom: -2rem;
+      }
     }
     .stacked-quote {
       background: white;
@@ -257,6 +273,10 @@
       //   margin: 1em;
       width: 100%;
       overflow: hidden;
+      margin: unset;
+      margin-top: 1em;
+      margin-bottom: 1em;
+
       @keyframes clockwise {
         0% {
           transform: rotate(0);
