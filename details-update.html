@@ -317,7 +317,7 @@
                   height="371"
                   seamless
                   frameborder="0"
-                  scrolling="yes"
+                  scrolling="no"
                   src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSNbUrDpE5F_EjSQ6V8MLSiWLncUVKr7oM2iNYWZLOMqUrDbCWFm94WMarTgSgM-9EL4qKPpVrlrpTS/pubchart?oid=2068451290&amp;format=image"
                 ></iframe>
 
@@ -986,6 +986,7 @@
         });
         $(".highlights-4").wrapInner("<div class='highlights-body'></div>");
         $(".news-content iframe").parent().addClass("iframe-parent");
+        $(".iframe-parent iframe").attr("scrolling", "yes");
       });
 
       if ($(".float-img").length) {
