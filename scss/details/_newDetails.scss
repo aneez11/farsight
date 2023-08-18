@@ -10,6 +10,8 @@
     max-width: 100%; /* Ensure the container doesn't exceed screen width */
     // overflow: auto; /* Enable scrollbars if content overflows */
     // width: 100%;
+    display: flex;
+    justify-content: center;
 
     & > iframe {
       max-width: 100%;

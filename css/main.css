@@ -1670,6 +1670,8 @@ a:hover {
 #news_details_update .iframe-parent {
   max-width: 100%;
   /* Ensure the container doesn't exceed screen width */
+  display: flex;
+  justify-content: center;
 }
 #news_details_update .iframe-parent > iframe {
   max-width: 100%;
