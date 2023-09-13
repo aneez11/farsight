@@ -41,6 +41,7 @@
   .subtitle {
     font-size: 1.5rem;
     margin-top: 30px;
+    font-style: italic;
   }
   .cover-section {
     position: relative;
@@ -156,6 +157,7 @@
       }
       @include media("<=lgPhone") {
         margin: unset;
+        margin-bottom: 1rem;
       }
     }
     // p {
@@ -183,7 +185,7 @@
         margin-right: 0.6rem;
         font-size: 4.3rem;
         float: left;
-        margin-top: -0.8rem;
+        margin-top: -1.1rem;
         margin-bottom: -2rem;
       }
     }
@@ -480,6 +482,17 @@
     font-weight: 600;
     a {
       color: var.$color-secondary;
+    }
+    @include media("<=lgPhone") {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 5px;
+      .social-share {
+        list-style: none;
+        padding: 0px;
+        font-size: 1.3rem;
+      }
     }
   }
   .author-info {

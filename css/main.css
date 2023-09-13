@@ -1693,6 +1693,7 @@ a:hover {
 #news_details_update .subtitle {
   font-size: 1.5rem;
   margin-top: 30px;
+  font-style: italic;
 }
 #news_details_update .cover-section {
   position: relative;
@@ -1833,6 +1834,7 @@ a:hover {
 #news_details_update .description-section ol,
 #news_details_update .description-section a {
     margin: unset;
+    margin-bottom: 1rem;
   }
 }
 #news_details_update .description-section p a {
@@ -1844,7 +1846,7 @@ a:hover {
   margin-right: 0.6rem;
   font-size: 4.3rem;
   float: left;
-  margin-top: -0.8rem;
+  margin-top: -1.1rem;
   margin-bottom: -2rem;
 }
 #news_details_update .description-section .stacked-quote {
@@ -2142,6 +2144,19 @@ a:hover {
 }
 #news_details_update .author-details a {
   color: #23475f;
+}
+@media (max-width: 576px) {
+  #news_details_update .author-details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+  }
+  #news_details_update .author-details .social-share {
+    list-style: none;
+    padding: 0px;
+    font-size: 1.3rem;
+  }
 }
 #news_details_update .author-info {
   border-top: 1px solid #23475f;
